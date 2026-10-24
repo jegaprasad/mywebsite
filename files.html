@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My files · thejpcinema</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;600;800&family=Rozha+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="files">
+<header class="bar">
+  <a class="brand" href="files.html#">thejpcinema</a>
+  <div class="bar-actions">
+    <button class="btn" id="export" type="button">Export</button>
+    <button class="btn primary" id="import" type="button">Import</button>
+    <input id="picker" type="file" multiple hidden>
+    <a class="btn" id="nc" target="_blank" rel="noopener">Open in Nextcloud</a>
+    <button class="btn ghost" id="logout" type="button">Log out</button>
+  </div>
+</header>
+<main class="files">
+  <nav id="crumbs" class="crumbs" aria-label="Folder path"></nav>
+  <div class="table" role="table">
+    <div class="row head" role="row">
+      <label class="chk"><input type="checkbox" id="all" aria-label="Select all files"></label>
+      <span>Name</span><span class="num">Size</span><span class="when">Modified</span>
+    </div>
+    <div id="list"></div>
+  </div>
+  <p id="empty" class="empty" hidden>This folder is empty. Use Import to add files here.</p>
+  <ul id="progress" class="progress"></ul>
+</main>
+<div id="drop" class="drop" hidden>Drop files to import into this folder</div>
+<div id="toast" class="toast" role="status" hidden></div>
+<dialog id="viewer"><img id="vimg" alt=""><button class="btn" id="vclose" type="button">Close</button></dialog>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

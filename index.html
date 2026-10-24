@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>thejpcinema</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;600;800&family=Rozha+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login" class="front">
+<main class="front-grid">
+  <section class="wall" id="wall" aria-label="Tamil cinema posters"></section>
+  <aside class="gate">
+    <h1>thejpcinema</h1>
+    <p class="tag">தமிழ் சினிமா</p>
+    <form id="login" autocomplete="on">
+      <label for="u">Username</label>
+      <input id="u" name="username" autocomplete="username" required>
+      <label for="p">Password</label>
+      <input id="p" name="password" type="password" autocomplete="current-password" required>
+      <p id="err" class="err" role="alert" hidden></p>
+      <button class="btn primary" type="submit">Log in</button>
+    </form>
+  </aside>
+</main>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
